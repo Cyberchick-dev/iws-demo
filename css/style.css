@@ -6,11 +6,9 @@ body{
 font-family: 'Poppins', sans-serif;
 }
 
-/* HERO SECTION */
-
-/* ==========================
+/* ======================================
    HERO SECTION
-========================== */
+====================================== */
 
 .hero{
     background:
@@ -23,76 +21,154 @@ font-family: 'Poppins', sans-serif;
 
     min-height: 90vh;
 
-    color: #fff;
-
     display: flex;
     align-items: center;
+
+    color: #fff;
 }
 
 .hero h1{
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 25px;
 }
 
 .hero p{
     font-size: 1.25rem;
+    line-height: 1.8;
     max-width: 650px;
-    line-height: 1.7;
-}
-}
-/* ========================= */
-/* SERVICES */
-/* ========================= */
-
-.service-card{
-
-background: #fff;
-
-padding:40px 30px;
-
-border-radius:15px;
-
-text-align:center;
-
-transition:.3s ease;
-
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-height: 100%;
+    margin-bottom: 35px;
 }
 
-.service-card i{
-    font-size: 50px;
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-buttons .btn{
+    padding:15px 35px;
+    border-radius:50px;
+    transition:.3s ease;
+}
+
+.hero-buttons .btn:hover{
+    transform:translateY(-3px);
+}
+
+.company-name{
+    margin-top:35px;
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:.8;
+}
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about{
+    padding: 80px 0;
+    background: #fff;
+}
+
+.about .row{
+    align-items: center;
+}
+
+.about img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.about h6{
+    color: #dc3545;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
     margin-bottom: 20px;
 }
 
-.service-card h4{
-    font-weight: 600
+.about .btn{
+    margin-top: 15px;
+    padding: 14px 34px;
+    border-radius: 10px;
+}
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-us{
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.why-us .row{
+    align-items: center;
+}
+
+.why-us img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.why-us h6{
+    color: #dc3545;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
-.service-card:hover{
 
-transform: translateY(-10px);
-
-box-shadow: 0 20px 40px rgba(0,0,0,.15);
-
+.why-us h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
 }
 
-/* ========================= */
-/* WHY CHOOSE US */
-/* ========================= */
-
-.why-item{
-font-size:18px;
-margin-bottom:18px;
-display:flex;
-align-items:center;
-gap:15px;
+.why-us p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 25px;
 }
 
-.why-item i{
-font-size:24px;
+.why-us ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-us ul li{
+    margin-bottom: 18px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.why-us ul li i{
+    color: #dc3545;
+    margin-right: 15px;
+    font-size: 22px;
 }
 
 /* ========================= */
@@ -243,30 +319,193 @@ box-shadow: 0 10px 20px rgba(0,0,0,.2);
    MOBILE RESPONSIVE
 ========================== */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
-    .hero{
-        min-height: 80vh;
-        text-align: left;
-    }
+    /* NAVBAR */
 
-    .hero h1{
-        font-size: 2.8rem;
-        line-height: 1.2;
-    }
-
-    .hero p{
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-
-    .hero .btn{
-        width: 100%;
-        margin-bottom: 12px;
+    .navbar{
+        padding:12px 0;
     }
 
     .navbar-brand img{
-        height: 60px;
+        height:55px;
+    }
+
+    .navbar-nav{
+        text-align:center;
+        padding-top:15px;
+    }
+
+    .navbar .btn{
+        width:100%;
+        margin-top:10px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height:100vh;
+        padding:120px 0 70px;
+        text-align:left;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+        line-height:1.2;
+        margin-bottom:20px;
+    }
+
+    .hero p{
+        font-size:1rem;
+        line-height:1.7;
+        margin-bottom:25px;
+    }
+
+    .hero .btn{
+        display:block;
+        width:100%;
+        margin-bottom:15px;
+    }
+
+
+    /* ABOUT */
+
+    .about{
+        padding:60px 0;
+    }
+
+    .about .row{
+        display:flex;
+        flex-direction:column-reverse;
+        gap:30px;
+    }
+
+    .about img{
+        width:100%;
+        border-radius:15px;
+        margin:0;
+    }
+
+    .about h6{
+        font-size:16px;
+        margin-bottom:10px;
+    }
+
+    .about h2{
+        font-size:2rem;
+        margin-bottom:20px;
+    }
+
+    .about p{
+        font-size:1rem;
+        line-height:1.8;
+        margin-bottom:18px;
+    }
+
+    .about .btn{
+        width:auto;
+        padding:12px 30px;
+    }
+
+
+    /* SERVICES */
+
+    .services{
+        padding:60px 0;
+    }
+
+    .service-box{
+        margin-bottom:25px;
+        padding:30px;
+        text-align:center;
+    }
+
+    .service-box i{
+        font-size:45px;
+        margin-bottom:20px;
+    }
+
+
+    /* WHY US */
+
+    .why-us{
+        padding:60px 0;
+    }
+
+    .why-us .row{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .why-us img{
+        width:100%;
+        border-radius:15px;
+        margin-bottom:10px;
+    }
+
+    .why-us h6{
+        font-size:16px;
+        margin-bottom:10px;
+    }
+
+    .why-us h2{
+        font-size:2rem;
+        margin-bottom:20px;
+    }
+
+    .why-us p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .why-us ul{
+        margin-top:20px;
+        padding:0;
+    }
+
+    .why-us li{
+        margin-bottom:15px;
+        font-size:1rem;
+    }
+
+
+    /* STATS */
+
+    .stats{
+        padding:60px 0;
+    }
+
+    .stats h1{
+        font-size:2.4rem;
+    }
+
+    .stats p{
+        margin-bottom:30px;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+        text-align:center;
+    }
+
+    footer .col-lg-4,
+    footer .col-lg-3,
+    footer .col-lg-2{
+        margin-bottom:30px;
+    }
+
+
+    /* BACK TO TOP */
+
+    #backToTop{
+        width:60px;
+        height:60px;
+        right:20px;
+        bottom:20px;
     }
 
 }
